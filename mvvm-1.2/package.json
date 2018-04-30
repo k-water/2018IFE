@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
-    "build": "cross-enbv NODE_ENV=production webpack"
+    "build": "cross-env NODE_ENV=production webpack --mode=production"
   },
   "keywords": [],
   "author": "k-water",
@@ -21,13 +21,19 @@
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "html-withimg-loader": "^0.1.16",
     "postcss-loader": "^2.1.4",
+    "san-loader": "0.0.7",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15",
     "webpack-dev-server": "^3.1.3"
+  },
+  "dependencies": {
+    "san": "^3.5.7",
+    "san-router": "^1.2.0"
   }
 }

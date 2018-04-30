@@ -1,10 +1,16 @@
-import './index.css'
+import san from 'san'
+import {
+    router
+} from 'san-router'
+import Hello from './hello/hello.san'
+router.add({
+    rule: '/',
+    Component: Hello,
+    target: '#app'
+})
 
-let a = 'hello world'
-document.body.innerHTML = a
-console.log('这是webpack打包的入口文件')
+router.start()
 
-// 还需要在主要的js文件里写入下面这段代码
 if (module.hot) {
     // 实现热更新
     module.hot.accept()
